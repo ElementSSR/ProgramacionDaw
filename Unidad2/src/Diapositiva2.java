@@ -66,7 +66,6 @@ public class Diapositiva2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Adivina el numero entre 1 y 100:");
         sol = Integer.parseInt(sc.next());
-        sc.close();
         if (sol < aleatorio){
         System.out.println("El numero es mayor");
         }
@@ -75,7 +74,6 @@ public class Diapositiva2 {
         }
         }while(sol != aleatorio);
         System.out.println("¡Correcto! El numero era: " + aleatorio);
-       
     }
     //Diapositiva Actividad 6
     public static void Actividad6(){
@@ -155,6 +153,6 @@ public class Diapositiva2 {
         sc.close();
     }
     public static void main(String[] args) {
-        Actividad7_2();
+        Actividad5();
     }
 }

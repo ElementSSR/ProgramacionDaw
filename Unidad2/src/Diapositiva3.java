@@ -11,8 +11,14 @@ public class Diapositiva3 {
         }
     }
     //Actividad 2
-    public static void Actividad2(){
-        
+    public static void Actividad2(double radio, double altura){
+        double PI = Math.PI;
+
+        double area = 2 * PI * (altura + radio);
+        double volumen = PI * ( 2* radio ) * altura;
+
+        System.out.println("Area del cilindro: "+area);
+        System.out.println("Volumen del cilindro: "+volumen);
     }
     //Actividad 3
     public static boolean esPar(int num){ 
@@ -29,6 +35,6 @@ public class Diapositiva3 {
         }
     }
     public static void main(String[] args) {
-        Actividad3();
+        Actividad2(5,10);
     }
 }

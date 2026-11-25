@@ -2,6 +2,7 @@ package Entregas;
 
 import java.time.LocalDateTime;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Tareas1 {
     
@@ -166,7 +167,6 @@ public class Tareas1 {
                 break;
             case 7:
                 System.out.println("Saliendo del programa...");
-                break;
             default:
                 System.out.println("El numero introducido no es valido");
         }
@@ -175,6 +175,8 @@ public class Tareas1 {
     public static void ejercicio6() {
         int sueldo = 0;
         int retencion = 0;
+        int soltero = 25;
+        int casado = 20;
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce tu cargo de empleado (1- Prog.Junior, 2- Prog.Senior, 3- Jefe de Proyecto):");
         int cargo = sc.nextInt();
@@ -195,9 +197,9 @@ public class Tareas1 {
         int dietas = dias * 30;
         int bruto = sueldo + dietas;
         if (estado == 1){
-            retencion = bruto * 25 / 100;
+            retencion = bruto * soltero / 100;
         }else if(estado == 2){
-            retencion = bruto * 20 / 100;
+            retencion = bruto * casado / 100;
         }else{
             System.out.println("El estado civil introducido no es valido");
         }
@@ -211,7 +213,7 @@ public class Tareas1 {
         System.out.println("|Sueldo neto: " + (bruto - retencion) + " euros");
     }
     //Ejercicio 7
-    public static void ejercicio7(){
+    public static void ejercicio7() {
         Scanner sc = new Scanner(System.in);
         int num = 1, contplus = 0,contmin = 0, sieteplus = 0, sietemin = 0;
         while (num != 0){
@@ -254,9 +256,8 @@ public class Tareas1 {
         sc.close();
     }
     //Ejercicio 9
-    public static void ejercicio9(){
-        for (int n = 1; n <= 100; n++) {
-            boolean primo = true;
+    public static boolean esprimo(int n) {
+         boolean primo = true;
             if (n <= 1) {
                 primo = false;
             } else {
@@ -267,13 +268,17 @@ public class Tareas1 {
                     }
                 }
             }
-            if (primo) {
+            return primo;
+    }
+    public static void ejercicio9() {
+        for (int n = 1; n <= 100; n++) {
+            if (esprimo(n)) {
                 System.out.println(n);
             }
         }
     }
     //Ejercicio 10
-    public static void ejercicio10(){
+    public static void ejercicio10() {
         Scanner sc = new Scanner(System.in);
         
         System.out.println("Introduce un numero:");
@@ -296,6 +301,6 @@ public class Tareas1 {
         sc.close();
     }
     public static void main(String[] args) {
-        ejercicio8();
+        ejercicio9();
     }
 }
