@@ -49,8 +49,7 @@ public class Actividad5 {
                 String alterEgo = (String) heroe.get("alter_ego");
                 String firstAppearance = (String) heroe.get("first_appearance");
 
-                // Filtrado: héroes de DC cuyo superhero empieza por la letra pasada como
-                // parámetro
+                // Filtrado: héroes de DC cuyo superhero empieza por la letra pasada como parámetro
                 if (publisher != null && publisher.contains("DC") &&
                         superhero != null && superhero.startsWith(letraInicial)) {
 

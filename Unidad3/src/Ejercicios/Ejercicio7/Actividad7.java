@@ -14,7 +14,7 @@ public class Actividad7 {
         System.out.println("===========================\n");
 
         // Turno de inicio aleatorio (true = empieza Héroe, false = empieza Monstruo)
-        //Tuve que utiliziar ayuda de la IA
+        // Tuve que utiliziar ayuda de la IA
         Random aleatorio = new Random();
         boolean turnoHeroe = aleatorio.nextBoolean();
 

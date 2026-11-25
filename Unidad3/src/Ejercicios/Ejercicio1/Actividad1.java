@@ -14,6 +14,6 @@ public class Actividad1 {
         pais2.mostrarInformacion();
 
         // Uso de getters y del cálculo individual
-        System.out.println("El PIB per cápita de " + pais1.getNombre() + " es: " + pais1.calcularPibPerCapita());
+        System.out.println("El PIB per cápita de " + pais2.getNombre() + " es: " + pais2.calcularPibPerCapita());
     }
 }
