@@ -1,0 +1,15 @@
+{
+    "firstName": "Spas",
+    "lastName": "Stefanov Rusekov",
+    "age": 22,
+    "phoneNumbers": [
+        {
+            "type": "home",
+            "phone-number": "611152734"
+        },
+        {
+            "type": "work",
+            "phone-number": "631099098"
+        }
+    ]
+}
